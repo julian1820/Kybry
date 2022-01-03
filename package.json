@@ -1,0 +1,24 @@
+{
+  "name": "kybry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"node-sass --include-path scss scss/style.scss css/style.css"
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julian1820/Kybry.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julian1820/Kybry/issues"
+  },
+  "homepage": "https://github.com/julian1820/Kybry#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

@@ -1,0 +1,39 @@
+.superior {
+    display: grid;
+    padding: 5rem 1rem;
+    grid-template-columns: 50% 50%; }
+
+    .letter {
+    font-size: 20px; }
+
+.img1 {  
+    width: 100%;
+    max-width: 433px;
+    max-height: 300px;
+    left: 870px;
+    top: 174px; }
+
+    .medio{
+    display: flex;
+    padding: 0.1rem;
+    background: #075B8E;
+    font-size: 20px;
+    text-align: center;
+    top: 300px;
+    }
+.inferior{
+    display: flex;
+    background: #6A6767;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;  
+}
+
+.item{  
+    float: left;
+    margin: 10px;
+    line-height: 75px;
+    
+}

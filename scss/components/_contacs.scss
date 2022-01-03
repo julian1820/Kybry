@@ -1,5 +1,20 @@
+$color:(
+    primary:#38AAF0,
+    secundary:#297FB4
+);
 
-.contact-wrapper {
+@mixin form {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(3, 3, 3);
+    border-bottom: 1px solid map-get($color, secundary );
+    
+}
+
+.contact-wrapper { 
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
 }
 
@@ -32,17 +47,12 @@
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: rgb(3, 3, 3);
-    border-bottom: 1px solid #297FB4;
+@include form();
+    
 }
 
 .contact-form form button {
-    background: #38AAF0;
+    background: map-get($color,primary);
     border: 0;
     text-transform: uppercase;
     padding: 1em;
@@ -50,7 +60,7 @@
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: #297FB4;
+    background: map-get($color, secundary );
     color: rgb(12, 11, 11);
     transition: background-color 1s ease-out;
     outline: 0;
